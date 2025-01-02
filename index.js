@@ -8,11 +8,11 @@ let level = 0;
 
 let h2 = document.querySelector("h2");
 
-document.addEventListener("click", function () {
-  if (started == false) {
+document.addEventListener("click", function (event) {
+  // Check if the clicked element is not one of the buttons
+  if (!event.target.classList.contains("btn") && started == false) {
     console.log("Game Started");
     started = true;
-
     levelUp();
   }
 });
@@ -36,7 +36,7 @@ function levelUp() {
   level++;
   h2.innerText = `level ${level}`;
 
-  let ranIndex = Math.floor(Math.random() * 3);
+  let ranIndex = Math.floor(Math.random() * 4); // Updated to include all 4 colors
   let randColor = btns[ranIndex];
 
   let randbtn = document.querySelector(`.${randColor}`);
@@ -64,13 +64,13 @@ function btnPress() {
   let btn = this;
   userFlash(btn);
 
-  userColor = btn.getAttribute("id");
+  let userColor = btn.getAttribute("id");
   userSeq.push(userColor);
   checkAns(userSeq.length - 1);
 }
 
 let allbtns = document.querySelectorAll(".btn");
-for (btn of allbtns) {
+for (let btn of allbtns) {
   btn.addEventListener("click", btnPress);
 }
 
