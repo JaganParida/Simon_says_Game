@@ -8,6 +8,7 @@ body {
   border-radius: 20%;
   border: 10px solid black;
   margin: 1rem;
+  display: flex;
 }
 
 .btn-container {
@@ -37,4 +38,13 @@ body {
 
 .userflash {
   background-color: green;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .btn {
+    height: 100px;
+    width: 100px;
+    border: 8px solid black;
+    margin: 0.5rem;
+  }
 }
