@@ -1,14 +1,43 @@
-# Simon says Game Project
+# Simon Says Game 🎮
 
-Simon Says is a classic game where players must follow commands prefixed with "Simon says." If the instruction lacks "Simon says," players should not follow it. Mistakes result in elimination.
+## Overview
 
-# How to Play
+**Simon Says** is a classic memory-based game where players must follow commands prefixed with **"Simon says."** If an instruction lacks "Simon says," players should ignore it. Making a mistake results in elimination. The game tests memory and reflexes by progressively increasing difficulty as the player advances.
 
-. First You have press any key on keyboard for start the game.
-. Then one box from four boxes flash for seconds .
-. Then you have to remember it then click on this box for first level.
-. After that continuosly level upgraded through your iq level , sequentially click on these boxes which are flash from begining.
+## How to Play
 
-# view live in this link
+1. **Click on the display area (except the four colored boxes) to start the game.**
+2. One of the four boxes will flash for a second.
+3. Remember the sequence and click the corresponding box for **Level 1.**
+4. As you progress, new boxes will flash in sequence. Click them in the correct order from the beginning.
+5. The game continues as long as you remember and follow the sequence correctly.
 
-https://jaganparida.github.io/Simon_says_Game/
+## Features
+
+- Interactive memory-based gameplay
+- Gradually increasing difficulty as levels progress
+- Enhances memory and pattern recognition skills
+- Engaging and intuitive UI for all ages
+
+## Technologies Used
+
+- **HTML5 & CSS3**: For structuring and styling the game
+- **JavaScript (ES6)**: For game logic and interactivity
+- **DOM Manipulation**: For handling game events and animations
+
+## Live Demo
+
+Check out the live version of the game here: [Simon Says Game](https://jaganparida.github.io/Simon_says_Game/)
+
+## 📂 Project Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/JaganParida/Simon_says_Game.git
+   cd Simon_says_Game
+   ```
+2. Open `index.html` in a browser to play the game.
+
+---
+
+### Have Fun Playing! 🚀
